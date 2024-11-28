@@ -1,0 +1,822 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+.title {
+    font-family: 'Lexend Deca';
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 37.5px;
+    color: rgba(34, 107, 223, 1);
+}
+.subtitle {
+    font-family: 'Red Hat Text';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 1); 
+}
+.green-text {
+    
+}
+.header {
+    padding: 20px 16px;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    width: 143px;
+}
+.header__btn {
+    font-family: 'Lexend Deca';
+    font-size: 13.04px;
+    font-weight: 400;
+    line-height: 16.3px;
+    padding: 8px 16px;
+    border: 1px solid rgba(34, 108, 224, 1);
+    color: rgba(34, 108, 224, 1);
+}
+.hero__text-container {
+    background-image: url("./img/hero-bg.jpg");
+    background-size: 100% 100%;
+    padding: 80px 20px;
+}
+.hero__black-container {
+    padding: 40px 20px;
+    background: #222222;
+    text-align: center;
+    width: 884px;
+    max-width: 100%;
+    margin: 0px auto;
+}
+.hero__subtitle {
+    font-family: 'Lexend Deca';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;  
+    color: rgba(3, 172, 132, 1);  
+}
+.hero__title {
+    font-family: 'Lexend Deca';
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 55px;
+    color: rgba(255, 255, 255, 1);  
+    margin: 20px 0px 11px 0px;  
+}
+.hero__content {
+    font-family: 'Lexend Deca';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21.6px;
+    color: rgba(255, 255, 255, 1);    
+}
+.hero__form-points {
+    position: absolute;
+    top: 0px;
+    width: 327px;
+    left: 165px;
+}
+.hero__form-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+}
+.hero__form {
+    position: relative;
+    width: 612px;
+    max-width: 100%;
+    text-align: center;
+}
+.hero__form-group {
+    text-align: left;
+
+}
+.hero__form-group label {
+    font-family: 'Red Hat Text';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.17px;
+    color: rgba(255, 255, 255, 1);    
+}
+.hero__form-group input {
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    height: 32px;
+    margin-top: 6px;
+}
+.hero__form-input-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 23px;
+    background: rgba(1, 179, 137, 1);
+    padding: 47px 48px;
+}
+.hero__form-bg {
+    position: absolute;
+    z-index: -1;
+    width: 612px;
+    max-width: 100%;
+    height: 153px;
+    background: rgba(237, 237, 237, 1);
+    right: 20px;
+    top: -20px;
+}
+.hero__form-btn {
+    padding: 8px 42px;
+    border: 1px solid rgba(34, 107, 223, 1);
+    font-family: 'Red Hat Text';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19.85px;
+    color: rgba(34, 107, 223, 1);  
+    transform: translateY(29px);  
+}
+.orange-line {
+    width: 64px;
+    height: 5px;
+    background: rgba(255, 118, 79, 1);
+}
+.about__title {
+    margin: 16px 0px;
+}
+.about {
+    position: relative;
+    padding: 88px 165px;
+    display: grid;
+    grid-template-columns: 43% 57%;
+    gap: 33px;
+    align-items: flex-start;
+}
+.about__content {
+    font-family: 'Red Hat Text';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 1); 
+    margin: 14px 0px;
+}
+.about__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+.about__video-container {
+    position: relative;
+    padding: 70px 30px 100px 30px;
+    background: rgba(246, 248, 251, 1);
+}
+.about__video-container iframe {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+.about__list {
+    list-style: disc;
+}
+.about__list-title {
+    font-family: 'Red Hat Text';
+    font-size: var(--sds-typography-body-size-medium);
+    font-weight: 500;
+    line-height: 22.4px;
+    text-align: left;  
+}
+.about__list li {
+    font-family: 'Red Hat Text';
+    font-size: var(--sds-typography-body-size-medium);
+    font-weight: 400;
+    line-height: 22.4px;
+    color: rgba(30, 30, 30, 1);  
+    padding-left: 20px;  
+    margin: 16px 0px;
+}
+.about__list li::marker {
+    content: "•";
+    font-family: 'Red Hat Text';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    color: rgba(34, 108, 224, 1);
+}
+.about__btn {
+    position: relative;
+    padding: 15px 16px;
+    font-family: 'Red Hat Text';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26.46px;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(34, 107, 223, 1); 
+    border-radius: 6px;   
+    top: 18px;
+    z-index: 2;
+}
+
+.about__points {
+    position: absolute;
+    right: -16px;
+    width: 159px;
+    bottom: 25px;
+}
+.about__line {
+    position: absolute;
+    width: 50%;
+    border-bottom: 1px solid rgba(34, 107, 223, 1);
+    border-right: 1px solid rgba(34, 107, 223, 1);
+    height: 400px;
+    left: 257px;
+    bottom: 98px;
+    z-index: 1;
+}
+.learn {
+    text-align: center;
+    padding: 65px 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.learn__title {
+    text-align: center;
+}
+.learn__subtitle {
+    transform: translateY(13px);
+}
+.learn__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 31px;
+    margin: 63px 0px 55px 0px;
+}
+.learn__item-mark {
+    width: 32px;
+}
+.learn__item {
+    padding: 20px 30px 20px 20px;
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid rgba(34, 107, 223, 1);
+    gap: 15px;
+}
+
+.learn__item-title {
+    font-family: 'Lexend Deca';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    color: rgba(34, 34, 34, 1);
+}
+.learn__item-content {
+    font-family: 'Red Hat Text';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(34, 34, 34, 1);
+}
+.learn__btn {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.29px;
+    text-align: left;
+    border: 1px solid rgba(34, 107, 223, 1);
+    color: rgba(34, 107, 223, 1);
+    padding: 7px 23px;
+}
+.webinar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 70px 165px 60px 165px;
+    z-index: 3;
+}
+.webinar__subtitle {   
+    margin: 17px 0px;
+}
+.webinar__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    column-gap: 30px;
+    row-gap: 35px;
+}
+.webinar__item {
+    padding: 30px 101px 30px 40px;
+    background: rgba(34, 34, 34, 1);
+    text-align: start;
+}
+.webinar__item-icon {
+    width: 40px;
+    margin-bottom: 23px;
+}
+.webinar__item-title {
+    font-family: 'Lexend Deca';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 19.69px;
+    color: rgba(3, 172, 132, 1);
+}
+.webinar__item-content {
+    font-family: 'Red Hat Text';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+.webinar__bg {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    z-index: -1;
+}
+.webinar__bg-mobile {
+    display: none;
+}
+.contact {
+    position: relative;
+    background: rgba(237, 237, 237, 1);
+    /* padding: 0px 85px; */
+    padding: 0px 85px 27px 85px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: flex-start;
+    overflow-x:hidden;
+}
+.contact iframe {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+.contact__video-container {
+    padding: 80px 80px 118px 80px;
+}
+.contact__text-container {
+    position: relative;
+    padding: 80px 107px 13px 62px;
+    text-align: center;
+}
+.contact__form__text-container {
+    padding: 48px 64px 37px 48px;
+    background: rgba(1, 179, 137, 1);
+    text-align: left;
+}
+.contact__form-title {
+    font-family: 'Lexend Deca';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33.6px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 1);    
+}
+.contact__form-content {
+    font-family: 'Red Hat Text';
+    font-size: var(--sds-typography-body-size-medium);
+    font-weight: 400;
+    line-height: 22.4px;
+    color: rgba(255, 255, 255, 1);  
+    margin: 6px 0px 15px 0px;  
+}
+.contact__form-label {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    color: rgba(255, 255, 255, 1);    
+}
+.contact__form-input {
+    background: rgba(255, 255, 255, 1);
+    height: 32px;
+    width: 100%;
+    margin: 3px 0px 15px 0px;
+}
+.contact__form-btn {
+    position: relative;
+    top: 30px;
+    z-index: 2;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.29px;
+    border: 1px solid rgba(34, 107, 223, 1);
+    color: rgba(34, 107, 223, 1);
+    padding: 8px 58px;
+    background: rgba(237, 237, 237, 1);
+}
+.contact__form-border {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    border-left: 1px solid rgba(34, 107, 223, 1);
+    border-bottom: 1px solid rgba(34, 107, 223, 1);
+    bottom: 0px;
+    left: 0px;
+}
+.contact__video-points {
+    position: absolute;
+    bottom: 71px;
+    width: 207px;
+    left: 77px;
+}
+.contact__form-points {
+    position: absolute;
+    width: 207px;
+    right: -22px;
+    top: 29px;
+}
+.contact__btn-nav {
+    position: absolute;
+    right: 78px;
+    bottom: 28px;
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    color: rgba(34, 108, 224, 1);    
+}
+.contact__orange-line {
+    position: absolute;
+    width: 5px;
+    height: 95px;
+    background: rgba(255, 118, 79, 1);
+    right: 165px;
+    top: 158px;
+}
+.footer {
+    background: rgba(34, 108, 224, 1);
+    padding: 55px 173px;
+}
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:end;
+}
+  
+.footer__img:first-child {
+    width: 100%; 
+}
+  
+.footer__img:not(:first-child) {
+    display: flex;
+    margin-right: 25px;
+    margin-top: 23px;
+}
+.footer__img:last-child {
+    transform: translateY(2px);
+}
+  
+.footer__logo {
+    width: 135px;
+    height: 31px;
+}
+.footer__items-title {
+    font-family: 'Lexend Deca';
+    font-size: 19.2px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: lowercase;
+    color: rgba(255, 255, 255, 1);        
+}
+.footer__item {
+    font-family: 'Red Hat Text';
+    font-size: 13.04px;
+    font-weight: 400;
+    line-height: 16.3px;
+    margin: 17px 0px;
+}
+.footer__item a {
+    color: rgba(255, 255, 255, 1);    
+}
+.footer__author {
+    font-family: 'Red Hat Text';
+    font-size: 13.04px;
+    font-weight: 400;
+    line-height: 16.3px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 43px;    
+}
+
+
+
+@media (max-width: 1200px) {
+    .about__line {
+        height: 600px;
+    }
+}
+@media (max-width: 1100px) {
+    .about {
+        grid-template-columns: none;
+        padding: 72px 20px;
+        row-gap: 75px;
+    }
+    .about__text-container {
+        position: relative;
+    }
+    .about__line {
+        border-bottom: none;
+        border-top: 1px solid rgba(34, 107, 223, 1);
+        left: 19px;
+        top: 100%;
+        height: 200px;
+    }
+    .about__video-container {
+        padding: 76px 82px;
+    }
+    .about__points {
+        right: -19px;
+    }
+
+    .hero__text-container {
+        padding: 78px 20px;
+    }
+    .hero__title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        margin: 18px 0px 11px 0px;    
+    }
+    .hero__form-points {
+        left: 0px;
+    }
+    .hero__form-btn {
+        transform: translateY(33px);
+    }
+    .hero__form-bg {
+        top: -16px;
+        right: -5px;
+    }
+    .learn {
+        padding: 30px 20px
+    }
+    .learn__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .webinar {
+        padding: 82px 20px 52px 20px;
+    }
+    .webinar__item {
+        padding: 30px 45px 30px 40px;
+    }
+    .webinar__item-icon {
+        margin-bottom: 30px;
+    }
+    .webinar__item-title {
+        margin-bottom: 10px;
+    }
+    .webinar__bg {
+        top: 20px;
+    }
+    .contact {
+        grid-template-columns: none;
+        padding: 50px 102px 21px 102px;
+    }
+    .contact__video-container {
+        padding: 0px;
+        text-align: center;
+    }
+    .contact__text-container {
+        padding: 59px 69px;
+    }
+    .contact__video-points {
+        top: 11px;
+        bottom: auto;
+        left: 15px;
+    }
+    .contact__form-points {
+        top: 367px;
+        right: -59px;
+    }
+    .contact__form {
+        z-index: 1;
+        position: relative;
+    }
+    .contact__form-btn {
+        top: 16px;
+    }
+    .contact__form-border {
+        height: 100%;
+        border-bottom: none;
+        left: 50%;
+        bottom: 50%;
+    }
+    .contact__btn-nav {
+        display: none;
+    }
+    .contact__orange-line {
+        top: 504px;
+        right: 140px;
+    }
+    .footer {
+        text-align: center;
+        padding: 55px 20px;
+    }
+    .footer__content {
+        flex-direction: column;
+    }
+    .footer__images {
+        justify-content: center;
+        margin-bottom: 43px;
+    }
+    .footer__author {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .hero__form-btn {
+        width: 100%;
+    }
+    .hero__form-input-section {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 41px 20px;
+    }
+    .hero__form-points {
+        left: -144px;
+        top: 4px;
+    }
+    .about {
+        padding: 68px 0px 65px 0px;
+        row-gap: 45px;
+    }
+    .about__btn {
+        width: 100%;
+        text-align: center;
+        top: 14px;
+    }
+    .about__line {
+        border-top: none;
+        left: 0px;
+    }
+    .about__text-container {
+        padding: 0px 20px;
+    }
+    .about__video-container {
+        padding: 70px 20px 77px 20px;
+        width: 100%;
+    }
+    .about__points {
+        width: 160px;
+        right: 5px;
+        bottom: 9px;
+    }
+    .learn {
+        padding: 0px 20px;
+    }
+    .learn__items {
+        margin: 63px 0px 42px 0px;
+        grid-template-columns: none;
+    }
+    .learn__item-content {
+        min-height: 72px;
+    }
+    .learn__btn {
+        width: 100%;
+        text-align: center;
+    }
+    .webinar {
+        padding: 123px 20px 45px 20px;
+    }
+    .webinar__items {
+        grid-template-columns: none;
+        row-gap: 30px;
+    }
+    .webinar__bg {
+        display: none;
+    }
+    .webinar__bg-mobile {
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 155px;
+        z-index: -1;
+    }
+    .contact {
+        padding: 79px 16px 40px 16px;
+    }
+    .contact__text-container {
+        padding: 46px 0px;
+    }
+    .contact__form__text-container {
+        padding: 40px 26px 30px 24px;
+    }
+    .contact__form-btn {
+        width: 100%;
+        top: 27px;
+    }
+    .contact__form-border {
+        height: 90%;
+    }
+    .contact__video-points {
+        top: 28px;
+        left: -12px;
+    }
+    .contact__form-points {
+        top: auto;
+        bottom: 143px;
+    }
+    .contact__orange-line {
+        right: 8px;
+        top: 323px;
+    }
+}
